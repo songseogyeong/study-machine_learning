@@ -1325,3 +1325,183 @@ W가 아래로 내려갈 수록 접선의 기울기가 점점 작아지고 Loss 
 <br>
 
 <img src="./c_regression/images/mini_batch.png" width="500px">
+
+<br/>
+<br/>
+<br/>
+
+## Ⅳ. 선형 회귀 분석 기법
+#### 1. OLS (Ordinary Least Square)
+최소제곱법, 또는 최소자승법, 최소제곱근사법, 최소자승근사법을 의미하는 기술로서, 가장 근접한 해를 구하는 방식이다.
+선형 회귀 모델을 평가하는 데 유용한 방법이며, 모델 전체와 모델의 각 feature에 대한 통계적 성능 지표를 사용하여 수행된다.
+
+- 다양한 유형의 통계 모델을 추정하고 통계 테스트를 수행하는 클래스 여러 개와 기능을 제공한다.
+- 관측된 데이터에 선형 방정식을 적용해서 생성되며, 가장 일반적인 방법이다.
+- P > |t| (p-value): 해당 독립 변수가 0.05보다 작으면 종속 변수에 영향을 미치는 것이 유의미하다라는 것을 뜻한다.
+- Durbin-Watson: 보통 1.5에서 2.5사이라면, 독립으로 판단하고 회귀 모형이 적합하다는 것을 의미한다.  
+  실무에서는 1 근처까지도 허용한다.
+- R<sup>2</sup>값은 1에 가까울 수록 좋다. 유지 또는 개선하는 방향으로만 수행해야 한다.
+  1 - 에러의 비중 = R2
+
+다중공선성을 해결하기 위해 나왔다.
+
+<br/>
+<br/>
+
+### 2. VIF (Variance Inflation Factor, 분산 팽창 요인)
+다중 공선성(Multicollinearity)이란 회귀 분석에서 독립변수들 간에 강한 상관관계가 나타나는 문제를 뜻한다.
+
+- 분산 팽창 요인 수치가 5 또는 10 이상일 경우 다중 공선성의 문제가 있다는 뜻이다.
+- 전체적으로 5를 넘어가면 10 이상을 판단한다.  
+
+<br/>
+
+<img src="./c_regression/images/multicollinearity.png">
+
+<br/>
+<br/>
+<br/>
+
+## Ⅴ. decision tree regression
+### 1. Decision Tree Regression (회귀 트리)
+결정 트리와 결정 트리 기반의 앙상블 알고리즘은 분류뿐 아니라 회귀분석도 가능하다.  
+분류와 유사하게 분할하며, 최종 분할 후 각 분할 영역에서 실제 데이터까지의 거리들의 평균 값으로 학습 및 예측을 수행한다.
+
+<br/>
+
+<img src="./c_regression/images/decision_tree_regression01.png" width="600px">
+
+<br/>
+
+회귀 트리 역시 복잡한 트리 구조를 가질 경우 과적합의 위험이 있고, 트리 크기와 노드의 개수 제한등으로 개선해야 한다.
+
+<br/>
+
+<img src="./c_regression/images/decision_tree_regression02.png" width="600px">
+
+<br/>
+
+독립 변수들과 종속 변수 사이의 관계가 상당히 비선형적일 경우 사용하는 것이 좋다.
+
+<br/>
+
+<img src="./c_regression/images/decision_tree_regression03.png" width="800px">
+
+<br/>
+<br/>
+<br/>
+
+## Ⅵ. regularized linear regression
+### 1. Regularized Linear Regression (정규화된 선형 회귀)
+다중 회귀 모델은 복잡도가 높아서 과대적합(overfitting)되는 경향이 있다.  
+이를 해결하기 위해서는 규제(penalty)를 주어 복잡도를 감소시켜야 한다.
+
+<br/>
+
+#### 1-1. 라쏘(LASSO, Least Absolute Shrinkage and Selection Operator)
+L1 규제를 통한 정규화를 사용하는 방식이다.  
+규제항이 0에 수렴할 때 L1 정규화에서는 가중치(W)가 0이 될 수 있다.
+
+L1 NORM의 경우에 절대값에 대한 식이므로 미분이 불가능한 점이 있지만, 특정 방식을 통해 미분하면 가중치가 0이 된다.  
+따라서, 경사하강법을 통해 학습하는 모델에는 적합하지 않다.
+
+중요하지 않은 feature들은 모델에서 제외하여 모델을 단순하게 만들고,  
+가장 영향력이 큰 특성이 무엇인지 알 수 있기 때문에 모델의 해석력이 좋아진다.
+
+<br/>
+
+<div style="display: flex; margin-top:20px">
+    <div>
+        <img src="./c_regression/images/regularized01.png" width="350" style="margin-left: 30px">
+    </div>
+    <div>
+        <img src="./c_regression/images/regularized02.png" style="margin-left: 50px">
+    </div>
+</div>
+
+<br/>
+
+
+#### 1-2. 릿지 (Ridge)
+L2 규제를 통한 정규화를 사용하는 방식이다.  
+규제항이 0에 수렴할 때 L2 정규화의 경우 가중치는 0이 될 수 없다.
+
+L2 NORM의 경우 미분했을 때 가중치가 남아있기 때문에, 경사하강법을 통해 학습하는 모델에 적합하다.  
+값이 0이 되어 제외되는 feature가 없지만, 골고루 0에 가까운 값으로 작아지기 때문에 장기적으로 더 좋은 모델이 된다.
+
+<br/>
+
+<div style="display: flex; margin-top:20px">
+    <div>
+        <img src="./c_regression/images/regularized03.png" width="350" style="margin-left: 30px">
+    </div>
+    <div>
+        <img src="./c_regression/images/regularized04.png" style="margin-left: 50px">
+    </div>
+</div>
+
+<br/>
+
+**λ (Regulation parameter)**  
+<sub>수학적으로는 람다라고 함.</sub>
+- λ이 커지면 loss function을 최소화하는 과정에서 NORM이 작아지므로 규제가 강해졌다고 표현한다.
+- λ이 작아지면 loss function을 최소화하는 과정에서 NORM이 커지므로 규제가 약해졌다고 표현한다.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+# dimension reduction
+## Ⅰ. Dimension Reduction(차원 축소)
+우리가 다루는 데이터들은 보통 3차원 공간에서는 표현하기 힘든 고차원의 데이터인 경우가 많다.  
+차원이 커질 수록 데이터 간 거리가 크게 늘어나며, 데이터가 희소화된다.
+
+고차원을 이루는 feature 중 상대적으로 중요도가 떨어지는 feature가 존재할 수 있기 때문에 계산 비용이 많이 들고 분석에 필요한 시각화가 어렵다.  
+머신러닝에서는 고차원 데이터를 다루는 경우가 많으며, 희소 데이터를 학습 시 예측 성능이 좋지 않다.
+
+차원 축소를 통해 Spares Data를 Dense하게 만들 필요가 있다.  
+feature가 많을 경우 독립변수 간 상관관계가 높아질 가능성이 높고, 이로 인해 다중 공선성문제가 발생할 수 있다.
+
+차원 축소로 인해 표현력이 일부 손실되지만, 손실을 감수하더라도 계산 효율을 얻기 위해 사용한다.
+
+<br/>
+
+### 1. PCA (Principal Component Analysis), 주성분 분석
+고차원의 데이터를 저차원으로 압축하는 대표적인 차원 축소방법이다.  
+데이터의 특성을 눈으로 쉽게 파악할 수 있도록 하며, 연산 속도에 큰 이점을 얻을 수 있다.
+
+고차원 데이터를 저차원 데이터로 압축하기 위해서는 먼저, 데이터를 가장 잘 표현하는 축을 설정해야 한다.  
+2차원 공간에서 1차원 공간으로 차원 축소를 진행하면, 1차원 공간상에서 데이터 분포가 가장 넓게 퍼지게 만드는 고유 벡터를 찾아야 한다.  
+고유 벡터를 찾았다면 feature 데이터들을 고유 벡터 축에 투영시킴으로써 주 성분을 찾아낼 수 있게 된다.
+
+<br/>
+
+<div style="display: flex">
+    <div>
+        <img src="./d_dimension_reduction/images/pca01.gif">
+    </div>
+    <div>
+        <img src="./d_dimension_reduction/images/pca02.gif" width="700" style="margin-left: 15px">
+    </div>
+</div>
+
+<br/>
+
+### 2. LDA (Linear Discriminant Analysis)
+PCA와 유사하지만, 분류에서 사용하기 쉽도록 개별 클래스를 분별할 수 있는 기준을 최대한 유지하면서 차원을 축소한다.
+
+PCA는 가장 큰 분산을 가지는 축을 찾았지만, LDA는 입력 데이터의 클래스를 최대한 분리할 수 있는 축을 찾는다.  
+클래스를 최대한 분리하기 위해서 클래스 간 분산을 최대화하고 클래스 내부 분산을 최소화 하는 방식으로 차원을 축소한다.
+
+<br/>
+
+<div style="display: flex">
+    <div>
+        <img src="./d_dimension_reduction/images/lda01.png" width="650">
+    </div>
+    <div>
+        <img src="./d_dimension_reduction/images/lda02.png" width="650" style="margin-left: 15px">
+    </div>
+</div>
