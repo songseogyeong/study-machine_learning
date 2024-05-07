@@ -1297,7 +1297,7 @@ W가 아래로 내려갈 수록 접선의 기울기가 점점 작아지고 Loss 
 
 <br>
 
-<img src="./c_regression//images/learning_rate.png">
+<img src="./c_regression/images/learning_rate.png">
 
 <br/>
 <br/>
@@ -1306,3 +1306,22 @@ W가 아래로 내려갈 수록 접선의 기울기가 점점 작아지고 Loss 
 ## Ⅱ. multivariate linear regression
 ### 1. Multivariate Linear Regression (다변량 선형 회귀)
 하나의 종속변수와 여러 독립변수 사이의 관계를 분석하는 기법이다.
+
+<br/>
+<br/>
+<br/>
+
+## Ⅲ. mini batch
+### 1. Mini Batch (미니 배치 경사 하강법)
+기존에 사용했던 전체 데이터를 대상으로 한 번에 경사 하강법을 수행하는 방법은 '배치 경사 하강법'이라 한다.
+
+배치 경사 하강법은 전체 데이터를 사용하므로 W가 최적값에 수렴하는 과정이 안정적이다.  
+하지만 시간이 너무 오래 걸리기 때문에, 나누어서 하는 방법이 필요하고 이를 '미니 배치 경사 하강법'이라 한다.
+
+- 미니 배치 경사 하강법은 미니 배치 단위로 경사 하강법을 수행하는 방법이다.
+- 전체가 아닌 일부 데이터를 사용하기 때문에 W가 최적값에 수렴하기 위해 많이 헤맬 수 있다.
+- 하지만 상대적으로 훈련 속도가 빨라서 시간적 효율이 높다.
+
+<br>
+
+<img src="./c_regression/images/mini_batch.png" width="500px">
