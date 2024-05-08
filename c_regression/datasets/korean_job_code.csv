@@ -1,0 +1,202 @@
+﻿job_code,job_title,,,
+0, 백수
+11,Senior public and corporate positions
+111,Assembly members, senior public officials and executives of public organizations
+112,senior corporate executive
+12,Administrative and management support managerial positions
+120,Administrative and management support manager
+13,Professional service manager
+131,Research, education and legal manager
+132,Insurance and Finance Manager
+133,Health and social welfare manager
+134,Managers related to culture, art, design and video
+135,Information and communication related manager
+139,Other professional service manager
+14,Construction, electricity and production-related managerial positions
+141,Construction, electricity and production managers
+149,Other construction, electricity and production managers
+15,Sales and customer service management positions
+151,Sales and transport manager
+152,Customer Service Manager
+153,Managers related to environment, cleaning and expenses
+159,Other sales and customer service managers
+21,Scientific experts and related positions
+211,Life and natural science experts
+212,Humanities and social sciences experts
+213,Laboratory for bio and natural sciences
+22,Information and communication specialists and technical positions
+221,Computer Hardware and Communication Engineering Specialist
+222,Information system development expert
+223,Information system operator
+224,Communication and broadcasting equipment engineer
+23,Engineering professionals and technical positions
+231,Architectural and civil engineering technicians and testers
+232,Chemical engineering technicians and testers
+233,Metal and material engineering technicians and testers
+234,Environmental engineering technician and tester
+235,Electrical, electronic and mechanical engineering technicians and testers
+236,Safety management and inspector
+237,Aircraft/ship engineer and controller
+239,Other engineering professionals and related workers
+24,Health, social welfare and religious jobs
+241,Medical professional
+242,Pharmacists and herbalists
+243,nurse
+244,Nutritionist
+245,Therapist and Medical Technician
+246,Health care related workers
+247,Social welfare related workers
+248,Religious workers
+25,Education professionals and related positions
+251,University professors and lecturers
+252,School teacher
+253,kindergarten teacher
+254,Literature, technology and entertainment instructor
+259,Other education experts
+26,Legal and administrative professions
+261,jurist
+262,Administrative expert
+27,Management and financial experts and related positions
+271,HR and Management Professional
+272,Finance and insurance experts
+273,Product planning, promotion and research expert
+274,Technical sales and brokerage related workers
+28,Culture, arts and sports experts and related positions
+281,Writer, reporter and publishing expert
+282,Curator, librarian and records manager
+283,Theater, film and video expert
+284,Painters, photographers and performing artists
+285,designer
+286,Sports and recreational experts
+289,Managers and other cultural and art related workers
+31,Office jobs related to management and accounting
+311,Administrative clerk
+312,Management-related clerk
+313,Accounting and accounting clerk
+314,Secretary and Office Assistant
+32,Finance and Insurance Office Workers
+320,Finance and insurance related office workers
+33,Legal and Audit Office Workers
+330,Legal and Audit Office Workers
+39,Consultation, guidance, statistics and other office jobs
+391,Statistics related clerk
+392,Travel, information and reception clerk
+399,Customer consultation and other clerks
+41,Police, fire and security related service positions
+411,Police, fire and prison related workers
+412,Security and security workers
+42,Cosmetology, wedding and medical assistant services
+421,Medical and welfare related service workers
+422,Esthetics, beauty and related service workers
+423,Wedding and funeral workers
+429,Other cosmetology/ceremony and medical assistant service workers
+43,Transportation and leisure service jobs
+431,Transport service worker
+432,Leisure and sports workers
+44,Cooking and Food Service Jobs
+441,Chef and cook
+442,Food service worker
+51,Sales job
+510,Salesperson
+52,Store salesperson
+521,Store salesperson
+522,A product rental worker
+53,Visiting, stalls and mail-order related jobs
+530,Personnel related to visiting, stalls and mail-order sales
+61,Agricultural and livestock skilled workers
+611,Crop cultivation worker
+612,Horticultural and landscape workers
+613,Livestock and breeding related workers
+62,Forestry skilled workers
+620,Forestry related workers
+63,Fishery skilled occupation
+630,Fishery related workers
+71,Food processing related craftsmen
+710,Food processing related personnel
+72,Textile, clothing and leather related craftsmen
+721,Textile and leather related technical workers
+722,Apparel manufacturing related skill workers
+73,Skills related to wood, furniture, musical instruments and signboards
+730,Wood, furniture, musical instruments, and sign-related skills workers
+74,Skills related to wood, furniture, musical instruments and signboards
+741,Mold, casting and forging source
+742,Officer and sheet metal officer
+743,Welder
+75,Transportation and machinery related trades
+751,Car mechanic
+752,Transport equipment maintenance worker
+753,Mechanical equipment installation and maintenance personnel
+76,Transportation and machinery related trades
+761,Electrical and electronics installers and repairmen
+762,Electrician
+77,Construction and mining related craftsmen
+771,Workers in construction structure related skills
+772,Construction-related skilled workers
+773,Workers in the building finishing related function
+774,Mining and civil engineering related skills workers
+78,Skills related to video and communication equipment
+780,Installation and repair personnel related to video and communication equipment
+79,Other Skills Related Jobs
+791,Craft and precious metal tax park
+792,plumber
+799,Other skilled workers
+81,Food processing related machine operator
+811,Food processing related machine operator
+812,Beverage manufacturing related machine operator
+819,Other food processing related machine operators
+82,Textile and footwear related machinery workers
+821,Textile manufacturing and processing machine operator
+822,Machine operators and assembly workers related to textiles and shoes
+823,Laundry related machine operator
+83,Chemical-related machine operator
+831,Petroleum and chemical processing equipment operators
+832,Operator of chemical, rubber and plastic products production machine
+84,Metal and non-metal related machine operators
+841,Machine operators related to casting and metal processing
+842,Painting and plating machine operator
+843,Non-metallic product producer operator
+85,Machine manufacturing and related machine operators
+851,Metal machine tool operator
+852,Air conditioning and heating related facility operators
+853,Automatic assembly line and industrial robot operator
+854,Transport vehicle and machine-related assembly personnel
+855,Metal machine parts assembly source
+86,Electrical and electronic related mechanical engineering jobs
+861,Power generation and distribution equipment operators
+862,Operators of electrical and electronic equipment
+863,Operator of electrical and electronic parts and product manufacturing equipment
+864,Electrical and electronic parts and product assembly source
+87,Driving and transport related jobs
+871,Train and train engineer
+872,Cargo train conductor and related employees
+873,Car driver
+874,Goods movement equipment operator
+875,Construction and mining machinery operators
+876,Ship deck crew and related personnel
+88,Machine operator related to water supply, sewage and recycling treatment
+881,Water and sewage treatment system operator
+882,Recycling treatment and incinerator operators
+89,Wood, printing and other machine-manipulation
+891,Wood and paper related machine operators
+892,Machine operators related to printing and photographing
+899,Other manufacturing related machine operators
+91,Simple labor jobs related to construction and mining
+910,Simple workers in construction and mining
+92,Transportation related simple labor
+921,Unloading and loading simple worker
+922,Delivery man
+93,Manufacturing-related simple labor
+930,Simple workers related to manufacturing
+94,Simple labor jobs related to cleaning and security
+941,Cleaners and environmental cleaners
+942,Guards and checkers
+95,Simple labor jobs related to housework, food and sales
+951,Housework and parenting helper
+952,Simple food workers
+953,Sales-related simple employee
+99,Agriculture, forestry and fishing and other services simple labor
+991,Simple workers related to agriculture, forestry and fishing
+992,Employees related to meter reading, collection and parking
+999,Other service related simple employees
+1011,Military officer
+1012,Long-term sergeant and warrant officer
